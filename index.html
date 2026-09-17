@@ -160,8 +160,10 @@
   .avatar {
     width: 150px; height: 150px; border-radius: var(--radius);
     border: 1px solid var(--line); background: var(--paper-raised);
-    display: flex; align-items: center; justify-content: center;
-    font-family: var(--mono); font-size: 15px; color: var(--blue); text-align: center; padding: 10px;
+    overflow: hidden; display: flex; align-items: center; justify-content: center;
+  }
+  .avatar img {
+    display: block; width: 100%; height: 100%; object-fit: cover;
   }
   .about-text p { color: var(--ink-soft); max-width: 620px; }
   .about-facts { list-style: none; margin: 22px 0 0; padding: 0; display: grid; gap: 8px; font-family: var(--mono); font-size: 13.5px; }
@@ -276,7 +278,9 @@
     <section id="apropos">
       <div class="section-head"><span class="section-num mono">01</span><h2>Profil</h2></div>
       <div class="about-grid reveal">
-        <div class="avatar">Photo</div>
+        <div class="avatar">
+          <img src="img/placeHolder.png" alt="Photo de profil" />
+        </div>
         <div class="about-text">
           <p>Actuellement en 2ᵉ année de BTS Services Informatiques aux Organisations, option Solutions Logicielles et Applications Métiers, au Lycée Gustave Flaubert à Rouen. J'aime comprendre un besoin métier et le traduire en une application fonctionnelle, du schéma de base de données au code.</p>
           <p>Curieux par nature, je passe autant de temps à corriger un bug qu'à en comprendre la cause profonde — c'est souvent là que j'apprends le plus.</p>
@@ -324,31 +328,28 @@
       <div class="project-grid reveal">
 
         <article class="card">
-          <div class="card-top"><h3>Gestion de stock — atelier</h3><span class="card-context">Projet BTS</span></div>
-          <p>Application de bureau permettant à une petite entreprise de suivre ses entrées/sorties de stock et ses seuils d'alerte, avec génération de rapports PDF.</p>
-          <div class="card-stack"><span>Java</span><span>MySQL</span><span>Merise</span></div>
-          <div class="card-links"><a href="#">Code source</a><a href="#">Documentation</a></div>
+          <div class="card-top"><h3>Application de gestion client</h3><span class="card-context">Projet BTS</span></div>
+          <p>Développement en Python d'un outil de suivi des clients et de gestion de reservations dans une base de donnée.</p>
+          <div class="card-stack"><span>Python</span><span>MySQL</span></div>
         </article>
 
         <article class="card">
           <div class="card-top"><h3>Réservation de salles</h3><span class="card-context">Projet BTS</span></div>
-          <p>Application web pour réserver des salles de cours en fonction des disponibilités, avec gestion des rôles (étudiant / enseignant / administration).</p>
-          <div class="card-stack"><span>PHP</span><span>Symfony</span><span>MySQL</span></div>
-          <div class="card-links"><a href="#">Code source</a><a href="#">Démo</a></div>
+          <p>Application web pour réserver des salles de coworking en fonction des disponibilités, avec création de compte utilisateur et protection des données.</p>
+          <div class="card-stack"><span>PHP</span><span>HTML / CSS</span><span>MySQL</span></div>
+          <div class="card-links"><a href="https://github.com/lazarfaran-afk/Sloom-projet-3">Code source</a></div>
         </article>
 
         <article class="card">
-          <div class="card-top"><h3>Suivi de covoiturage étudiant</h3><span class="card-context">Projet perso</span></div>
-          <p>Petite application pour organiser des trajets entre étudiants d'un même campus, avec mise en relation par créneau et trajet.</p>
-          <div class="card-stack"><span>C#</span><span>.NET</span><span>SQL Server</span></div>
-          <div class="card-links"><a href="#">Code source</a></div>
+          <div class="card-top"><h3>Site Vitrine</h3><span class="card-context">Stage Entreprise</span></div>
+          <p>Site web de présentation pour une entreprise de plomberie avec un design responsive et des fonctionnalités de contact.</p>
+          <div class="card-stack"><span>PHP</span><span>HTML / CSS</span><span>Bootstrap</span></div>
         </article>
 
         <article class="card">
-          <div class="card-top"><h3>Refonte de l'intranet — stage</h3><span class="card-context">Stage entreprise</span></div>
-          <p>Développement de nouveaux modules pour l'intranet interne d'une PME : formulaires de congés, annuaire, tableau de bord.</p>
-          <div class="card-stack"><span>JavaScript</span><span>PHP</span><span>MySQL</span></div>
-          <div class="card-links"><a href="#">Rapport de stage</a></div>
+          <div class="card-top"><h3>Mise à jour d'un site web de presentation</h3><span class="card-context">Stage entreprise</span></div>
+          <p>Modification d'un site web pour une entreprise d'immobilier, ajout de nouvelles fonctionnalités et amélioration de l'expérience utilisateur.</p>
+          <div class="card-stack"><span>JavaScript</span><span>PHP</span><span>HTML / CSS</span></div>
         </article>
 
       </div>
@@ -373,9 +374,9 @@
     <section id="veille">
       <div class="section-head"><span class="section-num mono">05</span><h2>Veille technologique</h2></div>
       <ul class="veille-list reveal">
-        <li>Suivi des évolutions de l'écosystème PHP / Symfony et des bonnes pratiques de sécurité web (OWASP).</li>
-        <li>Découverte progressive du développement mobile multiplateforme (Kotlin, Flutter).</li>
-        <li>Lecture régulière de retours d'expérience sur l'intégration continue et les tests automatisés.</li>
+        <li>[placeholder] Suivi des évolutions de l'écosystème PHP / Symfony et des bonnes pratiques de sécurité web (OWASP).</li>
+        <li>[placeholder] Découverte progressive du développement mobile multiplateforme (Kotlin, Flutter).</li>
+        <li>[placeholder] Lecture régulière de retours d'expérience sur l'intégration continue et les tests automatisés.</li>
       </ul>
     </section>
 
